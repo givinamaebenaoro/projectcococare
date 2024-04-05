@@ -154,7 +154,6 @@
                         </div>
                         <div class="tab-pane fade border p-3" id="color-tab-pane" role="tabpanel" aria-labelledby="color-tab" tabindex="0">
                             <div class="mb-3">
-
                                 <label class="mb-3">Select Color</label>
                                 <hr/>
                                 <div class="row">
@@ -164,7 +163,7 @@
                                             Color <input type="checkbox" name="colors[{{ $coloritem->id }}]" value="{{ $coloritem->id }}"/>
                                             {{ $coloritem->name }}
                                             <br/>
-                                            Quantity: <input type="number" name="quantity[{{ $coloritem->id }}]" style="width:70px;border:1px solid"/>
+                                            Quantity: <input type="number" name="colorquantity[{{ $coloritem->id }}]" style="width:70px;border:1px solid"/>
                                         </div>
                                     </div>
                                     @empty

@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    
+
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{ asset('admin/vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{ asset('admin/vendors/base/vendor.bundle.base.css')}}">
@@ -43,7 +43,12 @@
 
 </div>
 
+@yield('scripts')
+
     <script src="{{ asset('admin/vendors/base/vendor.bundle.base.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 
     <script src="{{ asset('admin/vendors/datatables.net/jquery.dataTables.js')}}"></script>
     <script src="{{ asset('admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
